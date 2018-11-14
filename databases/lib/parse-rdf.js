@@ -3,7 +3,6 @@
 const cheerio = require("cheerio");
 module.exports = rdf => {
     const $ = cheerio.load(rdf);
-    p
     const book = {};
 
     // the "+" means to transform string number into int

@@ -13,7 +13,6 @@ const options = {
 dir.readFiles(dirname, options, (err, content, next) => {
     if (err) throw err;
     const doc = parseRDF(content);
-    console.log('test here');
     console.log(JSON.stringify({
         index: {
             _id: `pg${doc.id}`
